@@ -1,0 +1,14 @@
+{
+"nhjr.custom_menu.name":"custom menu",
+"nhjr.custom_menu.description":"自定义菜单",
+
+"nhjr.custom_menu.category":"custom menu",
+"nhjr.custom_menu.reporter":"use menu",
+
+"nhjr.custom_menu.set_menu":"set menu [NAME] to [MENU]",
+"nhjr.custom_menu.delete_menu":"delete menu [NAME]",
+"nhjr.custom_menu.error":"error",
+"nhjr.custom_menu.readme":"readme",
+"nhjr.custom_menu.menus_json":"menus",
+"nhjr.custom_menu.deleteAll_menus":"delete all menus"
+}
