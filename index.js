@@ -121,12 +121,6 @@ logError(e) {
     extension_error= String(e);
     return extension_error;
 }
-inputStrToObj(Str) {
-    if (typeof Str == 'object') return Str ;
-    var i= ['undefined','NaN','Infinity','-Infinity'].indexOf(Str);
-    if(i>-1) return [undefined,NaN,Infinity,-Infinity][i] ;
-    return JSON.parse(Str)
-}
 menus_namesMenu(){
     var export_menu= {};
     for(const i in menus){
@@ -280,7 +274,7 @@ https://github.com/NanHaiJuRuo/clipcc-extension-custom_menu`
                 var name= this.allowName(a.NAME);
                 const before_setMenu_hasName= menus.hasOwnProperty(name);
                 if(String(a.MENU).replaceAll(' ','') =='[]') var setmenu_cache= [['','']]
-                else var setmenu_cache= this.inputStrToObj(a.MENU);
+                else var setmenu_cache= JSON.parse(a.MENU);
                 /*循环遍历检测*/
                 const er= ()=> this.logError('set menu error: not allowed type!');
                 if(!(setmenu_cache instanceof Array)) return er();
