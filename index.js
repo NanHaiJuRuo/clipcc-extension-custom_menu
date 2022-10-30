@@ -374,6 +374,7 @@ https://github.com/NanHaiJuRuo/clipcc-extension-custom_menu`
                 const sb= stage_blocks();
                 delete sb[menusCacheName];
                 delete sb[menusCacheValueName];
+                resetMenus();
                 loadReporter();
             }
         }
