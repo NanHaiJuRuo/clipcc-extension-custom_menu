@@ -1,3 +1,5 @@
+# 请移步到重写后的版本：https://github.com/bddjr/clipcc-extension-custom_menu_v2
+***
 使用 [nhjr-make_ccx](https://github.com/NanHaiJuRuo/nhjr-make_ccx) 作为扩展打包器。  
 该扩展使用了隐藏积木作为缓存，以保存到作品。
 ***
